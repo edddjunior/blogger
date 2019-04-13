@@ -14,11 +14,14 @@
         <span class="navbar-brand mb-0 h1">
 
           <%= user_status(@user) %>
-          
+
         </span>
+
+        <%= link_to "Home", root_path, :class =>"navbar-brand text-light" %>
+
       </nav>
 
-      <%= render partial: 'flash/flash', flash: flash %> 
+      <%= render partial: 'flash/flash', flash: flash %>
 
       <%= yield %>
     </div>
