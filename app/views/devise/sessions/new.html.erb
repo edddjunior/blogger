@@ -5,15 +5,15 @@
 
         <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
           <div class="form-group">
-            <%= label_tag :email, "Email" %>  
-            <%= text_field_tag :email, "", autofocus: true, :class =>"form-control" %>
+            <%= f.label :email, "Email" %>
+            <%= f.text_field :email, autofocus: true, :class =>"form-control" %>
           </div>
           <div class="form-group">
-            <%= label_tag :password, "Senha" %>
-            <%= password_field_tag :password, "", :class =>"form-control" %>
+            <%= f.label :password, "Senha" %>
+            <%= f.password_field :password, :class =>"form-control" %>
           </div>
           <div class="form-group">
-            <%= submit_tag "Entrar", :class =>"form-control btn btn-outline-dark" %>
+            <%= f.submit "Entrar", :class =>"form-control btn btn-outline-dark" %>
           </div>
         <% end %>
 
