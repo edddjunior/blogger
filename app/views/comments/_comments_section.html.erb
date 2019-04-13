@@ -1,0 +1,5 @@
+<div class="col-lg-12 mt-4">
+	<h2 class="text-left">Comentários: <small class="lead">(<%= comments_counter %>)</small></h2>
+	<%= render partial: 'comments/form' if signed_in? %>
+	<%= render partial: 'comments/show' %>
+</div>

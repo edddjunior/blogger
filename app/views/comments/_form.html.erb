@@ -1,0 +1,14 @@
+<%= form_with(model: @comment, url: [@post, @comment], local: true) do |f| %>
+  
+  <%= render partial: 'form_errors' %>
+
+  <div class="row">
+    <div class="col-lg-10 form-group">
+      <%= f.text_area :body, :class =>"form-control", :placeholder =>"Escreva o Que Quiser!" %>
+    </div>
+
+    <div class="col-lg-1 form-group">
+      <%= f.submit "Comentar", :class =>"btn btn-lg btn-primary border-dark text-light" %>
+    </div>
+  </div>
+<% end %>

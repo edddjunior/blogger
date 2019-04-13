@@ -1,0 +1,13 @@
+<h1 class="text-center"><small class="lead">POST </small><%= @post.title %></h1>
+<blockquote class="blockquote mt-4">
+	<p class="lead text-center"><mark><%= @post.body %></mark></p>
+	<% if @post.image.attached? %>
+	<!-- @post.image.present? will always return true, use attached? to check presence -->
+		<%= image_tag @post.image %>
+	<% end %>
+	<footer class="blockquote-footer text-left"><%= @post.user.username %></footer>
+</blockquote>
+<div class="col-lg-12 pb-5 border-bottom">
+	<%= author_options %>
+	<%= link_to "Lista de Posts", root_path, :class =>"btn btn-lg btn-outline-light border-dark text-dark no_link" %>
+</div>

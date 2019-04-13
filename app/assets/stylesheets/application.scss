@@ -1,0 +1,22 @@
+@import 'bootstrap';
+
+a:link, a:visited, a:hover, a:active {
+	text-decoration: none;
+	outline-style: none;
+}
+
+.card_black {		
+	background-color: #343A40;
+}
+
+.distance_of_time {
+	color: gray;
+}
+
+.no_border_form {
+	border: none;
+}
+
+.btn_round {
+	border-radius: 15%;
+}

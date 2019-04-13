@@ -1,0 +1,4 @@
+<h4>Desconectado</h4>
+<% unless current_page? (login_path) %>
+	<%= link_to 'Entrar', login_path, :class =>"btn btn-outline-light" %>
+<% end %>
