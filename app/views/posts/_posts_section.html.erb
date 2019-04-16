@@ -5,7 +5,7 @@
 	<!-- @post.image.present? will always return true, use attached? to check presence -->
 		<%= image_tag @post.image %>
 	<% end %>
-	<footer class="blockquote-footer text-left"><%= @post.user.username %></footer>
+	<footer class="blockquote-footer text-left"><%= @post.user.name %></footer>
 </blockquote>
 <div class="col-lg-12 pb-5 border-bottom">
 	<%= author_options %>

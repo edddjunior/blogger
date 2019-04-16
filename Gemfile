@@ -7,6 +7,8 @@ gem 'jquery-rails'
 gem 'bootstrap', '~> 4.0.0'
 gem 'devise'
 gem 'devise-i18n'
+gem 'omniauth'
+gem 'omniauth-facebook'
 gem 'dotenv-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

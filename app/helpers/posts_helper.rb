@@ -1,16 +1,16 @@
-module PostsHelper	
+module PostsHelper
 
 	def posts_reverse
 		@posts.sort_by(&:created_at).reverse
 	end
 
 	def author
-		@post.user.username
+		@post.user.name
 	end
 
 	def author_options
 		if signed_in?
-			render partial: 'author_options' if current_user.username == author
+			render partial: 'author_options' if current_user.name == author
 		end
 	end
 
